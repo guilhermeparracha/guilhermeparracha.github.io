@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapeste</title>
+    <style>
+        .fotografias {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        .fotografias img {
+            width: 400px;
+            border-radius: 20px;
+        }
+
+        p:nth-child(1) { color: brown;}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Budapeste</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+
+        </nav>
+    </header>
+    <main>
+        <h2>Multimédia</h2>
+        <p>Nesta página encontra conteúdos multimédia</p>
+        <p>
+            <a href="#fotografia">Fotografias</a>
+            <a href="#video">Vídeo</a>
+            <a href="#poesia">Poesia</a>
+
+        </p>
+        <section>
+            <h3 id="fotografia">Fotografias</h3>
+            <div class="fotografias">
+                <img src="images/1.jpg" alt="vista cidade">
+                <img src="images/2.jpg" alt="vista cidade">
+                <img src="images/3.jpg" alt="vista cidade">
+                <img src="images/4.jpg" alt="vista cidade">
+                <img src="images/5.jpg" alt="vista cidade">
+                <img src="images/6.jpg" alt="vista cidade">
+                <img src="images/7.jpg" alt="vista cidade">
+                <img src="images/8.jpg" alt="vista cidade">
+            </div>
+        </section>
+        <section>
+            <h4 id="video"> Vídeo</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e10pVhxNOco?si=8fwdv-UZ5ZErPadX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h5 id="poesia">Poesia</h5>
+            <div>
+                <p>Na ponte suspensa entre dois silêncios</p>
+                <p>— Buda e Peste —</p>
+                <p>sinto que sou estrangeiro em mim,</p>
+                <p>como o Danúbio que corre sem saber</p>
+                <p>se leva memórias ou apenas água.</p>
+                <p>A cidade ergue-se em cúpulas e sombras,</p>
+                <p>em teatros de pedra, em olhos de janelas,</p>
+                <p>e eu, que não pertenço a nada,</p>
+                <p>sou o transeunte de uma pátria interior</p>
+                <p>que nunca chega.</p>
+                <p>Budapeste é um pensamento com torres,</p>
+                <p>um poema que se escreve em nevoeiro,</p>
+                <p>um vinho que arde como a verdade oculta</p>
+                <p>de quem sonha sempre mais longe do que existe.</p>
+                <p>E no entanto, parado à beira do rio,</p>
+                <p>com as luzes a tremer como certezas frágeis,</p>
+                <p>sei que pertenço —</p>
+                <p>não à cidade, nem a mim,</p>
+                <p>mas ao instante irrepetível</p>
+                <p>que passa como o Danúbio,</p>
+                <p>imenso, indiferente, eterno.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>DIW 2025</p>
+    </footer>
+</body>
+
+</html>
