@@ -1,3 +1,81 @@
-body{
-    background-color: antiquewhite
-}img { width: 300px}
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header,footer, section, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+}
+
+header {
+  background: burlywood;
+  position: sticky;
+  height: 10vh;
+  top: 0;
+}
+
+section:nth-child(1) {
+  height: 90vh;
+  background: url(images/hero.png);
+  background-size: cover;
+  display: flex;
+  position: relative;
+  
+}
+
+section:nth-child(2) {
+  height: 100vh;
+  background: orange;
+}
+
+section:nth-child(3) {
+  height: 80vh;
+}
+
+footer {
+  height: 10vh;
+  background: black;
+  color: white;
+}
+
+section.hero h2 {
+  position: absolute;
+  top: 300px;      
+  left: 100px;     
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+section.hero p {
+  position: absolute;
+  top: 400px;  
+  left: 150px;  
+  font-size: 3vh;
+  max-width: 40%; 
+  text-align: right;
+}
+
+section.hero .links {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px; 
+}
+
+section.hero .links a {
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  border-radius: 8px;
+
+}
+
+section.hero .links a:hover {
+  background: rgba(255, 136, 0, 0.9); 
+}
+
