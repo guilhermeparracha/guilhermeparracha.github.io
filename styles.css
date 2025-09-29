@@ -79,3 +79,38 @@ section.hero .links a:hover {
   background: rgba(255, 136, 0, 0.9); 
 }
 
+.labs a{
+ display: inline-block;
+  padding: 10px 16px;
+  margin: 20px 0;
+  background: #ff8800;
+  color: white;
+  
+}
+.labs a:hover {
+  background: #cc6e00;
+  transform: scale(1.05);
+}
+
+.DIW {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px;
+  text-align: center;
+}
+
+.DIW img {
+  max-width: 100%;   
+  height: auto;
+  border-radius: 12px;
+}
+
+
+@media (min-width: 768px) {
+  .DIW {
+    flex-direction: row;   
+    justify-content: space-around;
+    text-align: left;
+  }}

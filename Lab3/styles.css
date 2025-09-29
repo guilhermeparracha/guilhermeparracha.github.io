@@ -44,3 +44,70 @@ th, td {
 header h1 {
   color: white;
 }
+
+nav {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 15px;
+  background: green;
+  padding: 10px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: white;
+  color: green;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  nav a {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+  }
+}
+
+.localizacao-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  padding: 20px;
+}
+
+.localizacao-container iframe {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .localizacao-container {
+    flex-direction: row;       
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+.texto-local, .mapa-local {
+    flex: 1; /* cada um ocupa metade */
+  }
+
+  .texto-local {
+    padding-right: 20px;
+  }
+}
