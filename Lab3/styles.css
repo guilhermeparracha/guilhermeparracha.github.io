@@ -152,4 +152,15 @@ section.Poesia{
   display: grid;
   grid-template-columns: 1fr 1fr; /* duas colunas para as imagens */
   gap: 20px;
+  
 }
+@media (max-width: 700px) {
+  .infos {
+    grid-template-columns: 1fr; 
+  }
+
+  .imagem-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
