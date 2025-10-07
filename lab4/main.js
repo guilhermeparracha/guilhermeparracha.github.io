@@ -2,8 +2,13 @@ let contador = 0;
 
 
 function aumentarContador() {
-    
   contador++;
+  document.getElementById("contador").textContent = contador;
+}
+
+
+function resetarContador() {
+  contador = 0;
   document.getElementById("contador").textContent = contador;
 }
 
