@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budapeste</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Budapeste</h1>
+  </header>
+
+  <main>
+    <p id="mensagem">Bem-vindo à página sobre Budapeste!</p>
+
+    <button onclick="aumentarContador()">Clique aqui</button>
+    <p>Contador: <span id="contador">0</span></p>
+
+    <button onmouseover="mudarCorFundo()" onmouseout="voltarCorFundo()">Passa o rato aqui</button>
+    <button onclick="mudarTexto()">Mudar texto</button>
+
+    <img src="images (2).jpg" alt="Imagem" 
+         onmouseover="aumentarImagem()" onmouseout="diminuirImagem()">
+  </main>
+
+  <footer>
+    <p>DIW 2025</p>
+  </footer>
+</body>
+</html>
