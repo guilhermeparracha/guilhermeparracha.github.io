@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <p id="passa">1.Passa por aqui!</p>
+    </section>
+    
+    <script>
+        //variáveis
+        const passa = document.querySelector("#passa");
+
+        //funcoes envent handlers
+        function mouseOver(){
+            passa.textContent = "Obrigado por passares"
+        }
+        function mouseOut(){
+            passa.textContent = "1.Passa por aqui!"
+        }
+
+        //event listeners
+
+        passa.onmouseover = () => mouseOver()
+        passa.onmouseout = () => mouseOut()
+
+
+    </script>
+
+    <section id="pinta">
+        <p>2.Pinta-me! <button id="red">Red</button> <button id="green">Green</button> <button id="blue">Blue</button></p>
+       
+    </section>
+
+     <script>
+        //variáveis
+        const pinta = document.querySelector("#pinta p");
+
+        //funcoes envent handlers
+
+        //event listeners
+
+        document.querySelector("#red").onclick = () => {pinta.style.color = "red"}
+        document.querySelector("#green").onclick = () => {pinta.style.color = "green"}
+        document.querySelector("#blue").onclick = () => {pinta.style.color = "blue"}
+
+    </script>
+
+    <section id="escreve">
+        <label for="colorir"> 3.Experimenta escrever...</label>
+        <input id="colorir" type="text">
+    </section>
+
+    <script>
+        //variáveis
+        const cores = ['red', 'blue', 'green']
+        const inputColorir = document.querySelector("#escreve input");
+
+        let iterador = 0
+        //funcoes envent handlers
+       
+        colorir = function() {
+            inputColorir.style.backgroundColor = cores[iterador];
+            iterador = (iterador + 1) % cores.length;
+        }
+
+        //event listeners
+       inputColorir.onkeyup = colorir
+    </script>
+
+    <section id="engCor">
+        <label for="cor">4.Escolhe</label>
+    </section>
+
+</body>
+</html>
