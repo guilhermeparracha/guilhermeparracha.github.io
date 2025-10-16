@@ -1,0 +1,17 @@
+.header {
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 5vh;
+    background: rgb(133, 98, 53);
+  position: sticky;
+  height: 10vh;
+  padding: 10px 16px;
+  margin: 20px 0;
+  
+}
+
+.header li a{
+text-decoration: none;
+color: black;
+}
