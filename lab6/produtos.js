@@ -1,4 +1,6 @@
+
 const produtos = [
+  
   {
     "id": 1,
     "title": "O mundo do binário",
