@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEISI Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Loja DEISI Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cesto">Cesto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="filtros" class="filtros">
+            <label for="categoria">Filtrar:</label>
+            <select id="categoria">
+                <option value="">Todas as categorias</option>
+            </select>
+
+            <label for="ordem">Ordenar:</label>
+            <select id="ordem">
+                <option value="">Ordenar pelo preço</option>
+                <option value="asc">Menor preço</option>
+                <option value="desc">Maior preço</option>
+            </select>
+
+            <label for="pesquisa">Procurar:</label>
+            <input type="text" id="pesquisa" placeholder="Pesquise por produto...">
+        </section>
+
+        <!-- 🔽 Secções principais -->
+        <section id="produtos" class="produtos"></section>
+        <section id="cesto" class="cesto"></section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
